@@ -1,101 +1,140 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <div className="parentContainer flex justify-center w-[100%] flex-wrap ">
+      <div className="transition-transform transform scale-y-100 min-h-[400px] lg:min-w-[420px] lg:min-h-[350px] md:min-h-[420px] md:max-w-[340px] sm:max-w-[300px] sm:min-h-[440px] m-4 rounded-2xl bg-white shadow-lg p-4 hover:scale-y-105">
+        <img
+          src="blog01.webp"
+          alt=""
+          className=" w-[400px] h-[170px] bg-red-100"
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <h1 className="text-xl font-bold mb-4">
+          "The Future of Web Development: Key Trends Shaping 2024"
+        </h1>
+        <p className="overflow-hidden">
+          <strong>Description</strong>: The blog explores key web development
+          trends for 2024, including Jamstack, serverless architecture, and
+          headless CMS.
+        </p>
+        <Link href="/Blog-1">
+          <button className="custom-button w-[100px] h-[30px] font-semibold bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-700 hover:scale-105 transition-transform duration-300">
+            <span>Read More</span>
+          </button>
+        </Link>
+      </div>
+      <div className="transition-transform transform scale-y-100 min-h-[400px] lg:min-w-[420px] lg:min-h-[350px] md:min-h-[420px] md:max-w-[340px] sm:max-w-[300px] sm:min-h-[440px] m-4 rounded-2xl bg-white shadow-lg p-4 hover:scale-y-105">
+        <img
+          src="blog02.webp"
+          alt=""
+          className=" w-[400px] h-[170px] bg-red-100"
+        />
+        <h1 className="text-xl font-bold mb-4">
+          "Understanding Candlestick Patterns in Crypto Trading: A Beginner’s
+          Guide"
+        </h1>
+        <p>
+          <strong>Description</strong>:This blog serves as a beginner's guide to
+          understanding candlestick patterns in crypto trading, emphasizing
+          their significance in technical analysis.
+        </p>
+        <Link href="/Blog-2">
+          <button className="custom-button w-[100px] h-[30px] font-semibold bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-700 hover:scale-105 transition-transform duration-300">
+            <span>Read More</span>
+          </button>
+        </Link>
+      </div>
+      <div className="transition-transform transform scale-y-100 min-h-[400px] lg:min-w-[420px] lg:min-h-[350px] md:min-h-[420px] md:max-w-[340px] sm:max-w-[300px] sm:min-h-[440px] m-4 rounded-2xl bg-white shadow-lg p-4 hover:scale-y-105">
+        {" "}
+        <img
+          src="blog03.webp"
+          alt=""
+          className=" w-[400px] h-[170px] bg-red-100"
+        />
+        <h1 className="text-xl font-bold mb-4">
+          "How Artificial Intelligence is Transforming Businesses"
+        </h1>
+        <p>
+          <strong>Description</strong>: This blog explores how Artificial
+          Intelligence (AI) is transforming businesses across various
+          industries. It highlights key use cases, such as chatbots in customer
+          service, automated trading in finance, and diagnostic tools in
+          healthcare.
+        </p>
+        <Link href="/Blog-3">
+          <button className="custom-button w-[100px] h-[30px] font-semibold bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-700 hover:scale-105 transition-transform duration-300">
+            <span>Read More</span>
+          </button>
+        </Link>
+      </div>
+      <div className="transition-transform transform scale-y-100 min-h-[400px] lg:min-w-[420px] lg:min-h-[350px] md:min-h-[420px] md:max-w-[340px] sm:max-w-[300px] sm:min-h-[440px] m-4 rounded-2xl bg-white shadow-lg p-4 hover:scale-y-105">
+        {" "}
+        <img
+          src="blog04.webp"
+          alt=""
+          className=" w-[400px] h-[170px] bg-red-100"
+        />
+        <h1 className="text-xl font-bold mb-4">
+          "From Frontend to Backend: A Developer’s Guide to Full Stack
+          Development"
+        </h1>
+        <p>
+          <strong>Description</strong>: This blog serves as a comprehensive
+          guide for developers transitioning from frontend to full stack
+          development. It outlines the essential skills needed in both frontend
+          and backend technologies, the importance of API integration and
+          security practices, and provides useful tools and resources for
+          mastering full stack development.
+        </p>
+        <Link href="/Blog-4">
+          <button className="custom-button w-[100px] h-[30px] font-semibold bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-700 hover:scale-105 transition-transform duration-300">
+            <span>Read More</span>
+          </button>
+        </Link>
+      </div>
+      <div className="transition-transform transform scale-y-100 min-h-[400px] lg:min-w-[420px] lg:min-h-[350px] md:min-h-[420px] md:max-w-[340px] sm:max-w-[300px] sm:min-h-[440px] m-4 rounded-2xl bg-white shadow-lg p-4 hover:scale-y-105">
+        {" "}
+        <img
+          src="blog05.webp"
+          alt=""
+          className=" w-[400px] h-[170px] bg-red-100"
+        />
+        <h1 className="text-xl font-bold mb-4">
+          "Risk Management in Crypto Trading: How to Safeguard Your Investments"
+        </h1>
+        <p>
+          <strong>Description</strong>:This blog delves into the importance of
+          risk management in cryptocurrency trading, addressing the volatility
+          of crypto markets and outlining essential strategies to safeguard
+          investments.
+        </p>
+        <Link href="/Blog-5">
+          <button className="custom-button w-[100px] h-[30px] font-semibold bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-700 hover:scale-105 transition-transform duration-300">
+            <span>Read More</span>
+          </button>
+        </Link>
+      </div>
+      <div className="transition-transform transform scale-y-100 min-h-[400px] lg:min-w-[420px] lg:min-h-[350px] md:min-h-[420px] md:max-w-[340px] sm:max-w-[300px] sm:min-h-[440px] m-4 rounded-2xl bg-white shadow-lg p-4 hover:scale-y-105">
+        <img
+          src="blog06.webp"
+          alt=""
+          className=" w-[400px] h-[170px] bg-red-100"
+        />
+        <h1 className="text-xl font-bold mb-4">
+          "The Role of Automation in Software Development: Boosting Efficiency"
+        </h1>
+        <p>
+          <strong>Description</strong>: This blog discusses the transformative
+          role of automation in software development, highlighting its impact on
+          efficiency through CI/CD pipelines and testing automation. It explores
+          popular tools.
+        </p>
+        <Link href="/Blog-6">
+          <button className="custom-button w-[100px] h-[30px] font-semibold bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-700 hover:scale-105 transition-transform duration-300">
+            <span>Read More</span>
+          </button>
+        </Link>
+      </div>
     </div>
   );
 }
